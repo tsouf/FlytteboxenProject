@@ -1,13 +1,17 @@
 package Tech;
 
+import Domain.Customer;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 import java.sql.*;
+import java.util.ArrayList;
 
 /**
  * Created by Noah P on 24-04-2017.
  */
 public class DBFacade {
     private String userName = "sa";
-    private String password = "rover29";
+    private String password = "@Xx123456@";
     private String port = "1433";
     private String databaseName = "Flytteboxen";
     private Connection con;
@@ -28,8 +32,16 @@ public class DBFacade {
             con = DriverManager.getConnection("jdbc:sqlserver://localhost:"+port+";databaseName="+databaseName,userName,password);
         } catch (SQLException | ClassNotFoundException | IllegalAccessException | InstantiationException e) {
             e.printStackTrace();
+
         }
     }
+
+    public void sqlError(SQLException e){
+        e.printStackTrace();
+        System.exit(1);
+    }
+
+
 
     /**
      * Makes prepared Statement
@@ -47,6 +59,7 @@ public class DBFacade {
         cl = con.prepareCall(sql);
 
         return cl;
+
     }
 
 }

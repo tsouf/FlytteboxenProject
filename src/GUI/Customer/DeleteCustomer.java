@@ -5,6 +5,10 @@ package GUI.Customer;
  */
 public class DeleteCustomer extends javax.swing.JPanel {
 
+
+
+
+
     /**
      * Creates new form DeleteCustomerPanel
      */

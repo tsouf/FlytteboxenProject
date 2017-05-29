@@ -198,7 +198,7 @@ public class ViewCustomer extends javax.swing.JPanel {
         jLabel4.setText("Look all information about the customer:");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel5.setText("Insert Costumer ID:");
+        jLabel5.setText("Insert Customer ID:");
 
         jButton2.setBackground(new java.awt.Color(153, 153, 153));
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N

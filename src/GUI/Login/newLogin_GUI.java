@@ -73,6 +73,7 @@ public class newLogin_GUI extends JFrame {
             welcome.playSound("src/welcome.wav");
             JFrame run = new SystemFrame();
             run.setVisible(true);
+            run.setLocationRelativeTo(null);
         } else {
             JOptionPane.showMessageDialog(null, "Employee not found.","Error", JOptionPane.WARNING_MESSAGE);
         }
